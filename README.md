@@ -10,7 +10,7 @@
 
 ## Funcionalidades
 
-- Suporte a operações aritméticas básicas: `+`, `-`, `*`, `/` e '^'.
+- Suporte a operações aritméticas básicas: `+`, `-`, `*`, `/` e `^`.
 - Suporte a parênteses para expressões complexas.
 - Atribuição e uso de variáveis.
 - Botão de "Clear" para limpar a entrada.
