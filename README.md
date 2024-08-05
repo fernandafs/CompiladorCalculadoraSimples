@@ -5,30 +5,31 @@
 
 ## Integrante
 
-- Nome: Fernanda Felix
-- RA: 11201921613
+- Nome: Fernanda Felix.
+- RA: 11201921613.
 
 ## Funcionalidades
 
-- Suporte a operações aritméticas básicas: `+`, `-`, `*`, `/`
-- Suporte a parênteses para expressões complexas
-- Atribuição e uso de variáveis
-- Botão de "Clear" para limpar a entrada
-- Botão de "Backspace" para apagar o último caractere
-- Entrada via teclado e via interface gráfica (Permite-se que use a interface para escrever a expressão, assim como é possível utilizar o teclado também para a entrada dos dados)
-- Interface gráfica para facilitar o uso
+- Suporte a operações aritméticas básicas: `+`, `-`, `*`, `/`.
+- Suporte a parênteses para expressões complexas.
+- Atribuição e uso de variáveis.
+- Botão de "Clear" para limpar a entrada.
+- Botão de "Backspace" para apagar o último caractere.
+- Entrada via teclado e via interface gráfica (Permite-se que use a interface para escrever a expressão, assim como é possível utilizar o teclado também para a entrada dos dados).
+- Interface gráfica para facilitar o uso.
 
 ## Requisitos
 
-- Python 3.x
-- Biblioteca PLY (localizado no requirements.txt)
-- Biblioteca Tkinter (inclusa no Python padrão)
+- Python 3.x.
+- Biblioteca PLY (localizado no requirements.txt).
+- Biblioteca Tkinter (inclusa no Python padrão).
 
 ## Execução via web
 
 - Replit: Replit é uma plataforma online que suporta uma grande variedade de linguagens de programação e oferece um ambiente de desenvolvimento integrado (IDE) na web.
 - Link:[ Replit](https://replit.com/~)
 - Como Usar:
-    1. Na home do Replit, utilize a opção "Import from GitHub"
-    2. Conecte-se a sua conta, procure o projeto pela URL e faça a importação.
-    3. 
+    1. Na home do Replit, utilize a opção "Import from GitHub";
+    2. Conecte-se a sua conta, procure o projeto pela URL e faça a importação;
+    3. Adicione, em comandos, a seguinte linha: "python main.py" e confirme;
+    4. Execute o código utilizando o botão de run.
