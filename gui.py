@@ -21,8 +21,9 @@ class CalculatorApp(tk.Tk):
             '7', '8', '9', '/',
             '4', '5', '6', '*',
             '1', '2', '3', '-',
-            '0', '.', '(', ')',
-            'C', '⌫', '=', '+'
+            '0', '(', ')', '+',
+            '.', '^', 'C', '⌫',
+            '='
         ]
         row = 0
         col = 0
@@ -58,10 +59,17 @@ class CalculatorApp(tk.Tk):
             'minus': '-',
             'numbersign': '#',
             'comma': ',',
-            'space': ' '
+            'space': ' ',
+            'caret': '^'
         }
         if key in key_map:
-            char = key_map[key]
+            if event.char == '^':
+                char = '^'
+            elif event.keysym in key_map:
+                char = key_map[event.keysym]
+            else:
+                char = event.char
+
             if char == '=':
                 self.calculate()
             elif char == '⌫':
