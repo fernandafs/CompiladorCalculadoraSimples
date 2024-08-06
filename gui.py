@@ -1,35 +1,43 @@
 import tkinter as tk
 from interpreter import interpret
 
-
 class CalculatorApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Calculadora Simples")  # Define o título da janela
-        self.geometry("400x600")  # Define o tamanho da janela
-        self.expression = ""  # Inicializa a expressão matemática
+        self.title("Calculadora Simples")
+        self.geometry("400x600")
+
+        self.expression = ""
+
         self.entry = tk.Entry(self, font=("Arial", 24), borderwidth=2, relief="solid")
         self.entry.pack(pady=10, padx=10, fill="both")
-        self.create_buttons()  # Cria os botões da calculadora
-        self.bind_keys()  # Associa eventos de teclado
 
-    # Cria e organiza os botões da calculadora na interface gráfica
+        self.create_buttons()
+        self.bind_keys()
+
     def create_buttons(self):
         buttons_frame = tk.Frame(self)
         buttons_frame.pack(pady=10)
+
         buttons = [
+            'AC', '⌫', '(', ')',
             '7', '8', '9', '/',
             '4', '5', '6', '*',
             '1', '2', '3', '-',
-            '0', '(', ')', '+',
-            '.', '^', 'C', '⌫',
+            '0', '.', '^', '+',
             '='
         ]
+
+        # Define o tamanho padrão dos botões
+        button_width = 5
+        button_height = 2
+
         row = 0
         col = 0
         for button in buttons:
             action = lambda x=button: self.on_button_click(x)
-            b = tk.Button(buttons_frame, text=button, font=("Arial", 18), command=action)
+            b = tk.Button(buttons_frame, text=button, font=("Arial", 18), command=action,
+                          width=button_width, height=button_height)
             b.grid(row=row, column=col, sticky="nsew")
             col += 1
             if col > 3:
@@ -49,7 +57,7 @@ class CalculatorApp(tk.Tk):
         key_map = {
             'Return': '=',
             'BackSpace': '⌫',
-            'Escape': 'C',
+            'Escape': 'AC',
             'parenleft': '(',
             'parenright': ')',
             'period': '.',
@@ -74,7 +82,7 @@ class CalculatorApp(tk.Tk):
                 self.calculate()
             elif char == '⌫':
                 self.backspace()
-            elif char == 'C':
+            elif char == 'AC':
                 self.clear()
             else:
                 self.expression += char
@@ -86,7 +94,7 @@ class CalculatorApp(tk.Tk):
     def on_button_click(self, char):
         if char == "=":
             self.calculate()
-        elif char == "C":
+        elif char == "AC":
             self.clear()
         elif char == "⌫":
             self.backspace()
