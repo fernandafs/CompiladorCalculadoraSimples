@@ -1,15 +1,25 @@
 # Calculadora Simples
 
-  Este projeto implementa uma calculadora simples utilizando Python e a biblioteca PLY (Python Lex-Yacc). A calculadora suporta operações aritméticas básicas, atribuições de variáveis e comandos de entrada e saída, além de uma interface gráfica com Tkinter.
-  Este projeto foi desenvolvido para a disciplina de Compiladores e Interpretadores da Universidade Federal do ABC (UFABC).
+  Este projeto baseia-se no desenvolvimento de um compilador para uma calculadora simples, com capacidade de interpretar e executar expressões matemáticas básicas. Este projeto é desenvolvido no contexto da disciplina de Compiladores e Interpretadores da Universidade Federal do ABC (UFABC).
+
+  Este projeto visa combinar o aprendizado teórico da disciplina de Compiladores e Interpretadores com uma aplicação prática. Através deste projeto, espera-se adquirir uma compreensão mais profunda dos processos envolvidos na criação de compiladores e interpretadores, bem como habilidades práticas em desenvolvimento de software.
 
 ## Integrante
 
 - Nome: Fernanda Felix.
 - RA: 11201921613.
 
+## Objetivos
+Desenvolver um analisador léxico e sintático:
+
+- Utilizar ferramentas de parsing para analisar e interpretar expressões matemáticas.
+- Garantir que a calculadora possa lidar com operações básicas como adição, subtração, multiplicação e divisão.
+- Implementar a gestão de erros que informe ao usuário sobre erros de sintaxe ou léxicos nas expressões inseridas.
+
 ## Funcionalidades
 
+- Análise Léxica: Reconhecimento de tokens como números, operadores e parênteses e conversão de expressões em uma sequência de tokens para posterior análise.
+- Análise Sintática: Construção de um analisador sintático que valide a estrutura das expressões matemáticas.
 - Suporte a operações aritméticas básicas: `+`, `-`, `*`, `/` e `^`.
 - Suporte a parênteses para expressões complexas.
 - Atribuição e uso de variáveis.
