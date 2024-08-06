@@ -33,3 +33,8 @@
     2. Conecte-se a sua conta, procure o projeto pela URL e faça a importação;
     3. Adicione, em comandos, a seguinte linha: "python main.py" e confirme;
     4. Execute o código utilizando o botão de run.
+ 
+## Bibliografia 
+
+- Documentação PLY: https://ply.readthedocs.io/en/latest/
+- Documentação Tkinter: https://docs.python.org/pt-br/dev/library/tkinter.html
